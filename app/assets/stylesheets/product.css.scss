@@ -1,0 +1,51 @@
+.block_1 {
+  padding: 14px 0px 14px 24px;
+}
+
+#product {
+
+  header{
+    @extend .block_1;
+    background-color: darkblue;
+    h1 a {
+      font-size: 2em;
+      color: whitesmoke;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+    }
+  }
+
+  .product {
+    margin-left: 24px;
+    margin-top: 14px;
+    padding: 14px 24px 24px 14px;
+    width: 300px;
+    margin-right: 24px;
+    box-shadow: 0 1px 1px #777f82;
+    background-color: white;
+
+    .product_name {
+      font-size: 1.25em;
+      padding: 0px 0px 14px 0px;
+      a {
+        color: darkblue;
+        text-decoration: none;
+        border-bottom: 1px solid #b2bad7;
+
+        &:hover {
+          color: darkred;
+        }
+      }
+    }
+
+    .product_price {
+
+    }
+
+    &:hover {
+      box-shadow: 0 10px 15px rgba(#b5bdc0,0.8);
+    }
+  }
+
+
+}
