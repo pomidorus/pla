@@ -7,6 +7,3 @@ desc_lime  = 'Lime has been known for long as the plant is rich in benefits. The
 Product.create!(name: 'fruit lemon horeca select spain', description: desc_lemon, price: 25.89)
 Product.create!(name: 'fruit purple mangosteen', description: desc_mango, price: 26.74)
 Product.create!(name: 'fruit lime', description: desc_lime, price: 227.19)
-Product.create!(name: 'fruit lemon horeca select spain', description: desc_lemon, price: 25.89)
-Product.create!(name: 'fruit purple mangosteen', description: desc_mango, price: 26.74)
-Product.create!(name: 'fruit lime', description: desc_lime, price: 227.19)
