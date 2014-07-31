@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  resource :products, only: [:show]
+  resources :products
 
   root 'home#index'
 end

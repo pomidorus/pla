@@ -1,7 +1,9 @@
 %article#home
   = render 'shared/header'
-  %section.products
-    = render @products
-
+  %div{style: 'display:flex'}
+    %section.products
+      = render @products
+    %section.new_product
+      = render 'products/form_new'
 
 

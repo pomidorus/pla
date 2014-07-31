@@ -29,6 +29,7 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
     builder (3.2.2)
+    callsite (0.0.11)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -37,6 +38,11 @@ GEM
       execjs
     coffee-script-source (1.7.1)
     diff-lcs (1.2.5)
+    draper (1.3.1)
+      actionpack (>= 3.0)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      request_store (~> 1.0.3)
     erubis (2.7.0)
     execjs (2.2.1)
     factory_girl (4.4.0)
@@ -64,6 +70,10 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    meta_request (0.3.4)
+      callsite (~> 0.0, >= 0.0.11)
+      rack-contrib (~> 1.1)
+      railties (>= 3.0.0, < 5.0.0)
     mime-types (1.25.1)
     minitest (5.4.0)
     multi_json (1.10.1)
@@ -72,6 +82,8 @@ GEM
     quiet_assets (1.0.3)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.1.4)
@@ -93,6 +105,7 @@ GEM
     rake (10.3.2)
     rdoc (4.1.1)
       json (~> 1.4)
+    request_store (1.0.8)
     rspec-core (3.0.3)
       rspec-support (~> 3.0.0)
     rspec-expectations (3.0.3)
@@ -151,10 +164,12 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  draper
   factory_girl_rails
   haml-rails
   jbuilder (~> 2.0)
   jquery-rails
+  meta_request
   pg
   quiet_assets
   rails (= 4.1.4)

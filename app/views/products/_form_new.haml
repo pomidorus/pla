@@ -1,0 +1,11 @@
+= form_for @product do |f|
+  %p
+    = f.label 'Name:', for: :product_name
+    = f.text_field :name
+  %p
+    = f.label 'Price:', for: :product_price
+    = f.text_field :price
+  %p
+    = f.label 'Description:', for: :product_description
+    = f.text_area  :description
+  = f.submit 'Add product'

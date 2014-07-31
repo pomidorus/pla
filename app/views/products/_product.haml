@@ -1,4 +1,4 @@
 %section.product{id: "#{product.id}"}
-  %p= product.name
-  %p= product.price
-  %p= product.description
+  %h2.product_name= link_to product.name, product_path(product), title: product.name
+  %p.product_price= product.decorate.price
+  %p.product_description= product.decorate.description
