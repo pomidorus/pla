@@ -34,6 +34,13 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'haml-rails'
+
+group :development do
+  gem 'quiet_assets'
+end
+
 group :test do
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
