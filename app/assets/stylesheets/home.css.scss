@@ -1,3 +1,36 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.block_1 {
+  padding: 14px 0px 14px 24px;
+}
+
+#home {
+
+  header{
+    @extend .block_1;
+    background-color: darkblue;
+    h1 {
+      font-size: 2em;
+      color: whitesmoke;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+
+  .products {
+    @extend .block_1;
+    display: flex;
+    .product {
+      padding: 14px 24px 24px 14px;
+      width: 200px;
+      margin-right: 24px;
+      box-shadow: 0 1px 1px #777f82;
+      background-color: white;
+
+      &:hover {
+        box-shadow: 0 10px 15px rgba(#b5bdc0,0.8);
+      }
+    }
+  }
+}
