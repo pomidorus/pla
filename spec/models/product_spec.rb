@@ -16,3 +16,10 @@ describe Product, 'attributes' do
   end
 
 end
+
+describe Product, 'validates' do
+  it 'validates the required fields' do
+    product = build(:empty_product)
+    expect{product.save!}.to raise_error(ActiveRecord::RecordInvalid, "Validation failed: Name can't be blank, Description can't be blank, Price can't be blank, Price is not a number")
+  end
+end

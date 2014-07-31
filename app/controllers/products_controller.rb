@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
   def create
     product = Product.new(product_params)
     product.save!
-    redirect_to :back
+    redirect_to root_path
   end
 
   private
